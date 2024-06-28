@@ -1,0 +1,183 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: Roboto Mono;
+}
+
+.back{
+    background: url(./banner11.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    background-position:center;
+}
+
+.image{
+    object-fit: cover;
+    background-size: cover;
+    background-position:center;
+}
+.active{
+    border: 2px solid #EFF0D1;
+    /* border-bottom: ; */
+    font-weight: 900;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.button {
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .button::before {
+    content: "";
+    position: absolute;
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: 0.7s;
+  }
+  .button:hover::before {
+    background-color: white;
+    width: 100%;
+    border: none;
+  }
+
+.buttonBlack {
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .buttonBlack::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    color: white;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: 0.5s;
+  }
+  .buttonBlack:hover::before {
+    background-color: black;
+    width: 100%;
+    border: none;
+    color: white;
+  }
+.buttonBrown {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .buttonBrown::before {
+    content: "";
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: 0.5s;
+  }
+  .buttonBrown:hover::before {
+    background-color: brown;
+    width: 100%;
+    border: none;
+    color: white;
+  }
+.buttonWhite {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .buttonWhite::before {
+    content: "";
+    position: absolute;
+    background-color: white;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: 0.5s;
+  }
+  .buttonWhite:hover::before {
+    background-color: white;
+    width: 100%;
+    /* border: none; */
+    color: black;
+  }
+
+  .slideIn {
+    background-color: brown;
+  }
+  
+  .gridCont{
+    display: grid;
+    /* grid-template-columns: repeat(3, minmax(100px,  1fr) ); */
+    grid-template-columns:  100px 200px 180px 100px;
+    grid-template-rows: repeat(3, 220px);
+    gap: 2rem;
+
+  }
+  .firstImg {
+    grid-column: 1 / 3;
+  }
+  .secondImg {
+    grid-column: 3 / 5;
+    /* grid-row: 1 / 2; */
+  }
+  .thirdImg {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+  .fourthImg {
+    grid-column: 4 / 5;
+  }
+  .fifthImg {
+    grid-column: 1 / 3;
+    grid-row: 3 / 5;
+
+  }
+  .sixthImg {
+    grid-column: 3 / 5;
+  }
+
+  .toggle {
+    margin-left: 40rem;
+    transition: .5s all ease-in-out;
+    /* opacity: 100; */
+    /* visibility: visible; */
+  }
+  .untoggle {
+    margin-right: -40rem;
+    transition: .5s all ease-in-out;
+    /* opacity: 0; */
+    /* visibility: hidden; */
+  }
+
+  .checkOut{
+      cursor: pointer;
+      text-align: center;
+      font-size: 10px;
+      letter-spacing: 0.1rem;
+      text-transform: uppercase;
+      background-color: #bfbfbf;
+      font-weight: bold;
+      color: brown;
+      border: none;
+      border-radius: 5px;
+      width: 80%;
+  }
