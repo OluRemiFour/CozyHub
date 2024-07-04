@@ -2,12 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body{
     font-family: Roboto Mono;
 }
 
 .back{
-    background: url(./banner11.jpg);
+    /* background: url(./banner11.jpg); */
     background-repeat: no-repeat;
     object-fit: cover;
     background-size: cover;

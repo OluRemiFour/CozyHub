@@ -1,5 +1,12 @@
 import Header from "../components/Header";
 import Backward from "../components/Backward";
+import BrandGrid1 from "../../public/BrandGrid1.png";
+import BrandGrid2 from "../../public/BrandGrid2.png";
+import BrandGrid3 from "../../public/BrandGrid3.png";
+import BrandGrid4 from "../../public/BrandGrid4.png";
+import BrandGrid5 from "../../public/BrandGrid5.png";
+import BrandGrid6 from "../../public/BrandGrid6.png";
+import Banner4 from "../../public/Banner4.jpg";
 
 function Brands() {
   return (
@@ -19,13 +26,13 @@ function Brands() {
         </div>
 
         <div className="md:gridCont grid gap-3">
-          <img src="/BrandGrid1.png" alt="Brand" className="lg:firstImg" />
-          <img src="/BrandGrid2.png" alt="Brand" className="secondImg" />
-          <img src="/BrandGrid3.png" alt="Brand" className="thirdImg" />
-          <img src="/BrandGrid4.png" alt="Brand" className="lg:fourthImg" />
-          <img src="/BrandGrid5.png" alt="Brand" className="fifthImg" />
-          <img src="/BrandGrid6.png" alt="Brand" className="sixthImg" />
-          <img src="/Banner4.jpg" alt="Brand" className="sixthImg" />
+          <img src={BrandGrid1} alt="Brand" className="lg:firstImg" />
+          <img src={BrandGrid2} alt="Brand" className="secondImg" />
+          <img src={BrandGrid3} alt="Brand" className="thirdImg" />
+          <img src={BrandGrid4} alt="Brand" className="lg:fourthImg" />
+          <img src={BrandGrid5} alt="Brand" className="fifthImg" />
+          <img src={BrandGrid6} alt="Brand" className="sixthImg" />
+          <img src={Banner4} alt="Brand" className="sixthImg" />
         </div>
       </div>
       <Backward />
