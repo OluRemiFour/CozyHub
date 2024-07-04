@@ -5,8 +5,15 @@ import { useContext, useEffect } from "react";
 import { IoMdClose } from "react-icons/io";
 
 function Cart() {
-  const { dispatch, addToCart, cartProduct, setCartProduct } =
-    useContext(CartContext);
+  const {
+    // dispatch,
+    // addToCart,
+    cartProduct,
+    setCartProduct,
+    isToggle,
+    // handleToggle,
+    handleCloseToggle,
+  } = useContext(CartContext);
   const totalAmount = cartProduct.reduce(
     (acc, itm) => acc + (itm?.price || 0) * (itm?.quantity || 0),
     0
@@ -52,9 +59,10 @@ function Cart() {
     }
   }
 
-  function handleCloseCart() {
-    dispatch({ type: "closeCart" });
-  }
+  // function handleCloseCart() {
+  //   dispatch({ type: "closeCart" });
+  //   console.log("close");
+  // }
 
   function handleDeleteCart(index) {
     const newCart = cartProduct.filter((_, i) => i !== index);
@@ -64,17 +72,17 @@ function Cart() {
 
   return (
     <>
-      {addToCart && (
+      {isToggle && (
         <div className="">
           <div
             className="w-full fixed z-[1000] h-full bg-black bg-opacity-70"
-            onClick={handleCloseCart}
+            onClick={handleCloseToggle}
           ></div>
           <div className="bg-white z-[2000] w-52 md:w-96 overflow-scroll flex flex-col h-screen fixed top-0 right-0 transform transition-transform duration-300">
             <div className="flex justify-between items-center px-6 py-5">
               <Link to="#">
                 <p
-                  onClick={handleCloseCart}
+                  onClick={handleCloseToggle}
                   className="text-2xl border border-black text-black px-2.5 py-2.5 rounded-full border-spacing-1 cursor-pointer"
                 >
                   <IoMdClose />
