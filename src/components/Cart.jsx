@@ -11,8 +11,9 @@ function Cart() {
     cartProduct,
     setCartProduct,
     isToggle,
-    // handleToggle,
-    handleCloseToggle,
+    setIsToggle,
+    handleToggle,
+    // handleCloseToggle,
   } = useContext(CartContext);
   const totalAmount = cartProduct.reduce(
     (acc, itm) => acc + (itm?.price || 0) * (itm?.quantity || 0),
@@ -76,13 +77,13 @@ function Cart() {
         <div className="">
           <div
             className="w-full fixed z-[1000] h-full bg-black bg-opacity-70"
-            onClick={handleCloseToggle}
+            onClick={() => setIsToggle(!isToggle)}
           ></div>
           <div className="bg-white z-[2000] w-52 md:w-96 overflow-scroll flex flex-col h-screen fixed top-0 right-0 transform transition-transform duration-300">
             <div className="flex justify-between items-center px-6 py-5">
               <Link to="#">
                 <p
-                  onClick={handleCloseToggle}
+                  onClick={() => setIsToggle(!isToggle)}
                   className="text-2xl border border-black text-black px-2.5 py-2.5 rounded-full border-spacing-1 cursor-pointer"
                 >
                   <IoMdClose />

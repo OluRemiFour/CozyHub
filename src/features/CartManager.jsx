@@ -76,6 +76,7 @@ export const CartContextProvider = ({ children }) => {
     cartProduct,
     setCartProduct,
     isToggle,
+    setIsToggle,
     handleToggle,
     handleCloseToggle,
   };
