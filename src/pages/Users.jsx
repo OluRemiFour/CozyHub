@@ -23,7 +23,7 @@ function Users() {
     setInputEmail(e.target.value);
     setInputPassword(e.target.value);
     createUserWithEmailAndPassword(auth, inputEmail, inputPassword)
-      .then((cred) => {
+      .then(() => {
         navigate("/home");
       })
       .catch((err) => {
@@ -33,7 +33,7 @@ function Users() {
   function handleSignIn() {
     setIsLoading(true);
     signInWithEmailAndPassword(auth, inputLoginEmail, inputLoginPassword)
-      .then((cred) => {
+      .then(() => {
         navigate("/home");
       })
       .catch((err) => {
@@ -108,7 +108,7 @@ function Users() {
             <h1 className="font-bold text-xl lg:3xl text-center">SIGN NOW</h1>
             <Link>
               <p className="text-center py-3">
-                Don't have an existing account?
+                Don&apos;t have an existing account?
               </p>
             </Link>
             <input

@@ -22,7 +22,7 @@ function Header() {
     <>
       <Cart />
 
-      <div className="bg-green-900 sticky top-0 z-50">
+      <div className="bg-red-900 sticky top-0 z-50">
         {/* <span className="bg-[#91a4ad] w-full inline-block py-5 text-center text-white">Black Fridays discount - Take advantage of them!</span> */}
         <span className="bg-[#EFF0D1] w-full inline-block py-5 text-center text-red-900">
           Black Friday&apos;s discount - Take advantage of them!
@@ -40,7 +40,7 @@ function Header() {
 
           <span className="flex justify-between items-center space-x-5">
             <select
-              className="bg-green-900 outline-none text-white"
+              className="bg-red-900 outline-none text-white"
               name=""
               id=""
             >
