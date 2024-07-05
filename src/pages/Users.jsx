@@ -54,7 +54,7 @@ function Users() {
     <div>
       <div className="bg-white-900 border shadow-md top-0 z-50">
         <span className="bg-[#EFF0D1] w-full inline-block py-5 text-center text-red-900">
-          Black Friday's discount - Take advantage of them!
+          Black Friday&apos;s discount - Take advantage of them!
         </span>
         <div className="flex justify-around lg:mx-25 mx-0 px-0 py-5 md:px-0 md:mx-3">
           {/* <Link className="text-black text-sm lg:text-1xl">&larr; BACKWARD</Link> */}
