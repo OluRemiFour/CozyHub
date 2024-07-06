@@ -6,13 +6,13 @@ import { CartContext } from "../features/CartManager.jsx";
 import Cart from "../components/Cart.jsx";
 
 function Header() {
-  const { dispatch, cartItem, handleToggle } = useContext(CartContext);
+  const { cartItem, handleToggle } = useContext(CartContext);
   const [isVisible, setIsVisible] = useState(false);
 
-  function handleCart() {
-    dispatch({ type: "toCart" });
-    dispatch({ type: "closeCart" });
-  }
+  // function handleCart() {
+  //   dispatch({ type: "toCart" });
+  //   dispatch({ type: "closeCart" });
+  // }
 
   function handleMobileNav() {
     setIsVisible((set) => !set);
@@ -107,7 +107,7 @@ function Header() {
           <FaRegUser />
           <Link>
             <p
-              onClick={handleCart}
+              onClick={handleToggle}
               className="text-sm border-white border px-3 py-2 rounded-full"
             >
               Cart {cartItem}
