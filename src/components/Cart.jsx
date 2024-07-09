@@ -246,7 +246,7 @@ function Cart() {
             className="w-full fixed z-[1000] h-full bg-black bg-opacity-70"
             onClick={() => setIsToggle(false)}
           ></div>
-          <div className="bg-white z-[2000] w-52 md:w-96 overflow-scroll flex flex-col h-screen fixed top-0 right-0 transform transition-transform duration-300">
+          <div className="bg-white z-[2000] w-full md:w-96 overflow-scroll flex flex-col h-screen fixed top-0 right-0 transform transition-transform duration-300">
             <div className="flex justify-between items-center px-6 py-5">
               <Link to="#">
                 <p
@@ -263,7 +263,7 @@ function Cart() {
                   <img
                     src={itm?.imageUrl}
                     alt={itm?.id}
-                    className="w-[36%] py-4 px-7"
+                    className="w-fit py-4 px-7"
                   />
                   <div>
                     <p className="py-2 font-semibold">Price: {itm?.price} ₦</p>
