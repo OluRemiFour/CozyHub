@@ -263,7 +263,7 @@ function Cart() {
                   <img
                     src={itm?.imageUrl}
                     alt={itm?.id}
-                    className="w-fit py-4 px-7"
+                    className="w-[8rem] py-4 px-7"
                   />
                   <div>
                     <p className="py-2 font-semibold">Price: {itm?.price} ₦</p>
