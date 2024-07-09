@@ -59,7 +59,7 @@ function Header() {
                   onClick={handleToggle}
                   className="text-sm border-white border px-[6px] lg:px-[12px] py-2 rounded-full"
                 >
-                  Cart {cartItem}
+                  Cart
                 </p>
               </Link>
             </span>
@@ -110,7 +110,8 @@ function Header() {
               onClick={handleToggle}
               className="text-sm border-white border px-3 py-2 rounded-full"
             >
-              Cart {cartItem}
+              {/* Cart {cartItem} */}
+              Cart
             </p>
           </Link>
         </span>
